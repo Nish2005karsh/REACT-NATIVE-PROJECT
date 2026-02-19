@@ -89,3 +89,109 @@ PostgreSQL (Neon DB)
 - YouTube tutorials are embedded within recipe pages
 
 ---
+
+## 📂 Project Structure
+
+```
+/backend
+├── routes/
+├── controllers/
+├── models/
+├── server.js
+└── .env
+
+/mobile
+├── screens/
+├── components/
+├── navigation/
+├── theme/
+└── .env
+```
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend (`/backend/.env`)
+```env
+PORT=5001
+DATABASE_URL=your_neon_db_url
+NODE_ENV=development
+```
+
+### Mobile App (`/mobile/.env`)
+```env
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
+
+---
+
+## 🔧 Running the Project Locally
+
+### 1️⃣ Run Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
+> Backend runs on: `http://localhost:5001`
+
+### 2️⃣ Run Mobile App
+```bash
+cd mobile
+npm install
+npx expo start
+```
+- Scan QR code with **Expo Go**
+- Or run on Android/iOS emulator
+
+---
+
+## ✨ Features Added Beyond the Base Tutorial
+
+While the core foundation was built following a [CodeSistency](https://www.youtube.com/@CodeSistency) tutorial, the project was expanded with:
+
+- ❤️ Favorites system with persistent storage
+- 👤 User profile screen
+- 🌈 Multiple dynamic theme support
+- 🔔 Toast notifications for better UX
+- Improved UI/UX refinements
+- Enhanced state management structure
+
+---
+
+## 🎯 Future Improvements
+
+- [ ] Add recipe creation by users
+- [ ] Add comments & ratings system
+- [ ] Add social sharing
+- [ ] Add offline support
+- [ ] Add admin dashboard
+- [ ] Deploy backend to cloud (Render / Railway / AWS)
+
+---
+
+## 📸 Screenshots
+
+| Home Screen | Recipe Detail | Profile |
+|---|---|---|
+| ![Home Screen](./assets/home.png) | ![Recipe Detail](./assets/detail.png) | ![Profile](./assets/profile.png) |
+
+---
+
+## 💡 What I Learned
+
+- Full-stack mobile app development
+- Authentication flows with Clerk
+- Email OTP verification logic
+- Backend REST API creation
+- PostgreSQL schema design
+- State management in React Native
+- Clean UI architecture
+- Environment configuration & security
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](./LICENSE).
