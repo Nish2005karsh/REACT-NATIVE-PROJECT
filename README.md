@@ -35,3 +35,57 @@ RecipeHub is a cross-platform mobile recipe application built using **React Nati
 | 🆓 Free Stack | 100% Free Stack (No paid services required) |
 
 ---
+
+## 🛠 Tech Stack
+
+### 📱 Mobile App
+- React Native
+- Expo
+- Clerk Authentication
+- React Navigation
+- React Hot Toast
+- Axios
+
+### 🖥 Backend
+- Node.js
+- Express.js
+- PostgreSQL (Neon DB)
+- REST API Architecture
+
+### 🗄 Database
+- Neon (Serverless PostgreSQL)
+
+---
+
+## 🔐 Authentication Flow
+
+Authentication is handled using **Clerk**:
+
+```
+1. User signs up with email
+2. Clerk sends a 6-digit OTP to email
+3. User verifies OTP
+4. Secure session is created
+5. User data is synced with backend
+```
+
+---
+
+## 🧠 Architecture
+
+```
+React Native App
+      ↓
+Clerk (Authentication + OTP)
+      ↓
+Express Backend API
+      ↓
+PostgreSQL (Neon DB)
+```
+
+- Recipes are fetched from the backend
+- Favorites are stored in PostgreSQL
+- Profile data is linked to authenticated users
+- YouTube tutorials are embedded within recipe pages
+
+---
